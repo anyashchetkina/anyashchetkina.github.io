@@ -3,51 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anya Shchetkina - Research</title>
+    <title>Research - Anya Shchetkina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fdf9f5;
             color: #333;
         }
         header {
-            background-color: #004080;
-            color: #fff;
+            background-color: #4a865e;
+            color: #fdf9f5;
             padding: 1em 0;
             text-align: center;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #fff;
+            background-color: #fdf9f5;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Poppins', sans-serif;
         }
         nav a {
             margin: 0 15px;
             padding: 15px;
             text-decoration: none;
-            color: #004080;
+            color: #4a865e;
         }
-        nav a:hover {
-            text-decoration: underline;
+        nav a.active {
+            font-weight: 700;
         }
-        section {
+        .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #fdf9f5;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #004080;
-            color: #fff;
-        }
         h2 {
-            color: #004080;
+            color: #4a865e;
+            border-bottom: 2px solid #4a865e;
+            padding-bottom: 10px;
+        }
+        .paper, .work-in-progress {
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 5px solid #4a865e;
+        }
+        .paper-title {
+            font-weight: bold;
+        }
+        p {
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -55,24 +64,30 @@
 
 <header>
     <h1>Anya Shchetkina</h1>
-    <p>Marketing PhD Student at the Wharton School of the University of Pennsylvania</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
+    <a href="research.html" class="active">Research</a>
     <a href="media.html">Media</a>
     <a href="fun-facts.html">Fun Facts</a>
 </nav>
 
-<section>
-    <h2>Research</h2>
-    <p>I'm interested in applied methodology for advertising measurement and personalization. My research focuses on developing methods to better understand how advertising impacts consumer behavior and how to personalize advertising to improve its effectiveness.</p>
-</section>
+<div class="container">
+    <h2>Working papers</h2>
+    <div class="paper">
+        <p>Shchetkina, Anya and Ron Berman, <span class="paper-title">"Mostly Useless Heterogeneity: The Potential for Targeting in Experiments with Many Interventions"</span>. Accepted in ACM EC 2024.</p>
+    </div>
+    <div class="paper">
+        <p>De La Rosa, Wendy, Ron Berman, Christophe Van den Bulte, Nidhi Agrawal, Adam L. Alter, Christopher J. Bechler, Jonathan E. Bogard, J. Anthony Cookson, Kylie Davis, Ayelet Fishbach, Craig R. Fox, Ayelet Gneezy, Hal E. Hershfield, Tatiana Homonoff, Aziza C. Jones, Lena Kim, John G. Lynch, Tamutswa Mahari, Erick M. Mas, Eesha Sharma, Anya Shchetkina, Jackie Silverman, Abigail B. Sussman, Patricia Torres, Stephanie M. Tully, Broderick L. Turner, Jr., Esther Uduehi, Oleg Urminsky, Adrian F. Ward, Vince Dorie, Gwen Rino, Maximilian Hell, and Eric Giannella, <span class="paper-title">“Increasing Interest in Claiming a Tax Credit: Evidence from Two Large-Scale A/B/n Field Experiments Among Lower Income People”</span>. R&R at Marketing Science.</p>
+    </div>
 
-<footer>
-    <p>Contact me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-</footer>
+    <h2>Work in progress</h2>
+    <div class="work-in-progress">
+        <p><span class="paper-title">Identification of Nonlinearities and Dynamics in Marketing Mix Models</span></p>
+        <p>with Ryan Dew and Nicolas Padilla</p>
+    </div>
+</div>
 
 </body>
 </html>

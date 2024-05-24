@@ -3,53 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anya Shchetkina - Media</title>
+    <title>Media - Anya Shchetkina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fdf9f5;
             color: #333;
         }
         header {
-            background-color: #004080;
-            color: #fff;
+            background-color: #4a865e;
+            color: #fdf9f5;
             padding: 1em 0;
             text-align: center;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #fff;
+            background-color: #fdf9f5;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Poppins', sans-serif;
         }
         nav a {
             margin: 0 15px;
             padding: 15px;
             text-decoration: none;
-            color: #004080;
+            color: #4a865e;
         }
-        nav a:hover {
-            text-decoration: underline;
+        nav a.active {
+            font-weight: 700;
         }
-        section {
+        .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 
-
-0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #004080;
-            color: #fff;
+            background-color: #fdf9f5;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #004080;
+            color: #4a865e;
+            border-bottom: 2px solid #4a865e;
+            padding-bottom: 10px;
+        }
+        .media-item {
+            margin: 15px 0;
+        }
+        .media-title {
+            font-weight: bold;
+        }
+        .media-link {
+            color: #4a865e;
+            text-decoration: none;
+            border-bottom: 1px dashed #4a865e;
+        }
+        .media-link:hover {
+            color: #333;
+            border-bottom: 1px solid #333;
+        }
+        .media-date {
+            color: #777;
+            font-size: 0.9em;
+        }
+        p {
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -57,29 +75,33 @@
 
 <header>
     <h1>Anya Shchetkina</h1>
-    <p>Marketing PhD Student at the Wharton School of the University of Pennsylvania</p>
 </header>
 
-nav>
+<nav>
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
-    <a href="cv.html">CV</a>
+    <a href="media.html" class="active">Media</a>
     <a href="fun-facts.html">Fun Facts</a>
 </nav>
 
-<section>
+<div class="container">
     <h2>Media</h2>
-    <p>Check out some of the media coverage of my work:</p>
-    <ul>
-        <li><a href="link-to-media-article-1" target="_blank">Media Article 1</a></li>
-        <li><a href="link-to-media-article-2" target="_blank">Media Article 2</a></li>
-        <li><a href="link-to-media-article-3" target="_blank">Media Article 3</a></li>
-    </ul>
-</section>
+    <p>I completed my undergraduate degree at the New Economic School in Moscow, Russia. The New Economic School has a popular science website called GURU, which aims to popularize economic and financial knowledge among a wide audience. Over the past few years, I have contributed several articles and podcasts to GURU (links below, all in Russian). In 2023, I was honored to receive the Andrej Bremzen Prize for my active participation in the New Economic School's educational initiatives and my contribution to spreading economic and financial knowledge among a wide audience.</p>
+    
+    <div class="media-item">
+        <p class="media-title">Articles:</p>
+        <p><a href="https://guru.nes.ru/kak-obshhestvu-najti-obshhij-yazyik-s-yazyikovoj-modelyu.html" class="media-link">Consumers, Language Models, and Personalized Data</a> <span class="media-date">(05/23/24)</span></p>
+        <p><a href="https://guru.nes.ru/kak-prodat-lichnuyu-zhizn.html" class="media-link">Marketing of Private Life and Private Data</a> <span class="media-date">(02/02/23)</span></p>
+        <p><a href="https://guru.nes.ru/kak-zarabotat-na-odinochestve.html" class="media-link">How to Profit from Loneliness: Dating Industry</a> <span class="media-date">(11/16/22)</span></p>
+        <p><a href="https://guru.nes.ru/expert-shelf/spisok-dlya-chteniya-rekomendaczii-knig-ot-annyi-shhetkinoj.html" class="media-link">Books to Read: Human Economics</a> <span class="media-date">(03/14/22)</span></p>
+    </div>
+    
+    <div class="media-item">
+        <p class="media-title">Podcasts:</p>
+        <p><a href="https://guru.nes.ru/chto-o-nas-teper-znayut-marketologi.html" class="media-link">What Do Marketers Know about Us?</a> <span class="media-date">(03/19/24)</span></p>
+        <p><a href="https://guru.nes.ru/skolko-stoit-etika-v-potrebitelskom-vyibore.html" class="media-link">Value of Ethics in Consumer Choice</a> <span class="media-date">(11/28/23)</span></p>
+    </div>
 
-<footer>
-    <p>Contact me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-</footer>
 
 </body>
 </html>

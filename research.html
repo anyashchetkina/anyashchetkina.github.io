@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research - Anya Shchetkina</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTTB7X9Y38"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTTB7X9Y38"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-HTTB7X9Y38');
-</script>
+      gtag('config', 'G-HTTB7X9Y38');
+    </script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -76,10 +76,16 @@
             color: #415503;
             text-decoration: none;
             border-bottom: 1px dashed #415503;
+            cursor: pointer;
         }
         .custom-link:hover {
             color: #333;
             border-bottom: 1px solid #333;
+        }
+        .abstract {
+            display: none;
+            margin-top: 10px;
+            color: #666;
         }
         @media (max-width: 600px) {
             .container {
@@ -94,8 +100,17 @@
             }
         }
     </style>
+    <script>
+        function toggleAbstract(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === '' || element.style.display === 'none') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
 </head>
-
 
 <body>
 
@@ -113,17 +128,26 @@
 <div class="container">
     <h2>Working papers</h2>
     <div class="paper">
-        <p>Shchetkina, Anya and Ron Berman, <span class="paper-title">"Mostly Useless Heterogeneity: The Potential for Targeting in Experiments with Many Interventions"</span>. Accepted at ACM EC 2024.</p>
+        <p>Shchetkina, Anya and Ron Berman, <span class="paper-title">"When Is Heterogeneity Actionable for Targeting?"</span>  Accepted at ACM EC 2024.
+        <a class="custom-link" onclick="toggleAbstract('abstract1')">[Abstract]</a> 
+        <a class="custom-link" href="actionable_heterogeneity.pdf" target="_blank">[Paper]</a>
+        </p>
+        <div id="abstract1" class="abstract">
+            <p>We apply five popular personalization approaches to two large-scale field experiments with many interventions (aka megastudies) aimed at increasing vaccination rates (the Walmart study of Milkman et al. (2022) and the Penn-Geisinger study of Milkman et al. (2021) and Patel et al. (2023)). We find limited value of targeting in the Walmart experiment and a four times higher value of targeting in the Penn-Geisinger experiment. We seek to explain the difference in the gains from personalization between the two studies and show that the presence of heterogeneity alone is not sufficient to predict whether a targeting exercise will be successful.  Instead, a specific form of heterogeneity, which we call ``actionable'' heterogeneity, determines the value of targeting. We demonstrate how the amount of actionable heterogeneity depends on three forces: (1) within- and (2) cross-treatment heterogeneity, as well as (3) cross-treatment correlation. For studies with many interventions, such as the ones we analyze, determining the magnitude of actionable heterogeneity can be challenging. To aid this task, we develop a model that estimates the value of personalized policies compared to the best untargeted intervention using three simple summary statistics of the data. We find that the value of actionable heterogeneity of the Penn-Geisinger study is higher than that of the Walmart study, which can explain the difference in the observed values of targeting. Our model also illustrates conditions when adding more treatments to an experiment may hurt the value of targeting even in infinite samples.</p>
+        </div>
     </div>
     <div class="paper">
         <p>De La Rosa, Wendy, Ron Berman, Christophe Van den Bulte, Nidhi Agrawal, Adam L. Alter, Christopher J. Bechler, Jonathan E. Bogard, J. Anthony Cookson, Kylie Davis, Ayelet Fishbach, Craig R. Fox, Ayelet Gneezy, Hal E. Hershfield, Tatiana Homonoff, Aziza C. Jones, Lena Kim, John G. Lynch, Tamutswa Mahari, Erick M. Mas, Eesha Sharma, Anya Shchetkina, Jackie Silverman, Abigail B. Sussman, Patricia Torres, Stephanie M. Tully, Broderick L. Turner, Jr., Esther Uduehi, Oleg Urminsky, Adrian F. Ward, Vince Dorie, Gwen Rino, Maximilian Hell, and Eric Giannella, <span class="paper-title">“Increasing Interest in Claiming a Tax Credit: Evidence from Two Large-Scale A/B/n Field Experiments Among Lower Income People”</span>. R&R at Marketing Science.</p>
     </div>
-
-    <h2>Work in progress</h2>
-    <div class="work-in-progress">
-        <p><span class="paper-title">Your MMM Is Broken: Identification of Nonlinearities and Dynamics in Marketing Mix Models</span></p>
-        <p>with Ryan Dew and Nicolas Padilla</p>
+    <div class="paper">
+        <p>Dew, Ryan, Nicolas Padilla, and Anya Shchetkina <span class="paper-title">"Your MMM Is Broken: Identification of Nonlinearities and Dynamics in Marketing Mix Models"</span>
+        <a class="custom-link" onclick="toggleAbstract('abstract2')">[Abstract]</a>
+        </p>
+        <div id="abstract2" class="abstract">
+            <p>Recent years have seen a resurgence in interest in marketing mix models (MMMs), which are aggregate-level models of marketing effectiveness. Often these models incorporate nonlinear effects, and either implicitly or explicitly assume that marketing effectiveness varies over time. In this paper, we show that nonlinear and time-varying effects are often not identifiable from standard marketing mix data: while certain data patterns may be suggestive of nonlinear effects, such patterns may also emerge under simpler models that incorporate dynamics in marketing effectiveness. This lack of identification is problematic because nonlinearities and dynamics suggest fundamentally different optimal marketing allocations. We examine this identification issue through theory and simulations, wherein we explore the exact conditions under which conflation between the two types of models is likely to occur. In doing so, we introduce a flexible Bayesian nonparametric model that allows us to both flexibly simulate and estimate different data-generating processes. We show that conflating the two types of effects is especially likely in the presence of autocorrelated marketing variables, which are common in practice, especially given the widespread use of stock variables to capture long-run effects of advertising. We illustrate these ideas through numerous empirical applications to real-world marketing mix data, showing the prevalence of the conflation issue in practice. Finally, we show how marketers can avoid this conflation, by designing experiments that strategically manipulate spending in ways that pin down model form.</p>
+        </div>
     </div>
+
 </div>
 
 </body>

@@ -121,14 +121,24 @@
 <nav>
     <a href="index.html">Home</a>
     <a href="research.html" class="active">Research</a>
-    <a href="media.html">Media</a>
+    <a href="CV.pdf" target="_blank">CV</a>
     <a href="fun-facts.html">Fun Facts</a>
 </nav>
 
 <div class="container">
+    <h2>Job Market Paper</h2>
+    <div class="paper">
+        <p> <span class="paper-title">Blind Targeting: Personalization under Third-Party Privacy Constraints</span>
+        <a class="custom-link" onclick="toggleAbstract('abstract0')">[Abstract]</a> 
+        </p>
+        <div id="abstract0" class="abstract">
+            <p>Major advertising platforms have recently increased privacy protections by limiting advertisers’ access to individual-level data. Instead of providing access to the granular raw data, the platforms only allow a limited number of aggregate queries to a dataset, which is further protected by adding differentially private noise. This paper studies whether and how advertisers can design effective targeting policies within these restrictive privacy preserving data environments. To achieve this, I develop a method based on Bayesian optimization that includes two innovations over the classic setup: (i) integral updating of posterior which allows to select best regions to query rather than points and (ii) targeting-aware acquisition function that dynamically selects regions most informative for the targeting task. I identify the conditions of the dataset and privacy environment that necessitate the use of such a “smart” querying strategy. I also show when a simple strategy, such as uniform binning, is sufficient. Finally, I apply the strategy to the Criteo AI Labs dataset for uplift modeling. I show that a simple benchmark strategy fails under differential privacy requirement in some settings. However, the strategic querying method delivers a robust performance that achieves the same level as a non-privacy-protected state-of-the-art machine learning method.</p>
+        </div>
+    </div>
+
     <h2>Working papers</h2>
     <div class="paper">
-        <p>Shchetkina, Anya and Ron Berman, <span class="paper-title">"When Is Heterogeneity Actionable for Targeting?"</span>  Extended abstract at ACM EC 2024.
+        <p>Shchetkina, Anya and Ron Berman, <span class="paper-title">"When Is Heterogeneity Actionable for Targeting?"</span> Accepted for publication as an extended abstract at ACM EC’24. Major revision at <i>Management Science</i>.
         <a class="custom-link" onclick="toggleAbstract('abstract1')">[Abstract]</a> 
         <a class="custom-link" href="actionable_heterogeneity.pdf" target="_blank">[Paper]</a>
         </p>
@@ -137,7 +147,7 @@
         </div>
     </div>
     <div class="paper">
-        <p>Dew, Ryan, Nicolas Padilla, and Anya Shchetkina <span class="paper-title">"Your MMM Is Broken: Identification of Nonlinearities and Dynamics in Marketing Mix Models"</span>
+        <p>Dew, Ryan, Nicolas Padilla, and Anya Shchetkina <span class="paper-title">"Your MMM Is Broken: Identification of Nonlinearities and Dynamics in Marketing Mix Models"</span> <i>Authors contributed equally.</i> Risky revision at <i>Journal of Marketing Research</i>.
         <a class="custom-link" onclick="toggleAbstract('abstract2')">[Abstract]</a>
         <a class="custom-link" href="https://arxiv.org/abs/2408.07678" target="_blank">[Paper]</a>
         </p>
@@ -146,14 +156,10 @@
         </div>
     </div>
     <div class="paper">
-        <p>De La Rosa, Wendy, Ron Berman, Christophe Van den Bulte, Nidhi Agrawal, Adam L. Alter, Christopher J. Bechler, Jonathan E. Bogard, J. Anthony Cookson, Kylie Davis, Ayelet Fishbach, Craig R. Fox, Ayelet Gneezy, Hal E. Hershfield, Tatiana Homonoff, Aziza C. Jones, Lena Kim, John G. Lynch, Tamutswa Mahari, Erick M. Mas, Eesha Sharma, Anya Shchetkina, Jackie Silverman, Abigail B. Sussman, Patricia Torres, Stephanie M. Tully, Broderick L. Turner, Jr., Esther Uduehi, Oleg Urminsky, Adrian F. Ward, Vince Dorie, Gwen Rino, Maximilian Hell, and Eric Giannella, <span class="paper-title">“Increasing Interest in Claiming a Tax Credit: Evidence from Two Large-Scale A/B/n Field Experiments Among Lower Income People”</span>.</p>
+        <p>De La Rosa, Wendy, et al., <span class="paper-title">“Increasing Interest in Claiming a Tax Credit: Evidence from Two Large-Scale A/B/n Field Experiments Among Lower Income People”</span>. Reject and resubmit at <i> Marketing Science</i>.</p>
     </div>
     
     
-    <h2>Work in Progress</h2>
-    <div class="paper">
-        <p> <span class="paper-title">Blind Targeting: Personalization under Privacy Constraints</span></p>
-    </div>
 </div>
 
 </body>
